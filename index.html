@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our 2 Months Anniversary</title>
+  <link rel="icon" type="image/png" href="images/gift.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="page1-layout">
+      <div class="photo-box">
+        <img src="images/us.jfif" alt="Couple Photo">
+        <div class="photo-caption">Our Favorite Memory 💖</div>
+      </div>
+
+      <div class="passcode-side">
+        <h1>Enter our passcode</h1>
+
+        <div class="passcode-boxes">
+          <div class="digit-box" id="box0"></div>
+          <div class="digit-box" id="box1"></div>
+          <div class="digit-box" id="box2"></div>
+          <div class="digit-box" id="box3"></div>
+        </div>
+
+        <div class="keypad">
+          <button class="key" onclick="addDigit('1')">1</button>
+          <button class="key" onclick="addDigit('2')">2</button>
+          <button class="key" onclick="addDigit('3')">3</button>
+          <button class="key" onclick="addDigit('4')">4</button>
+          <button class="key" onclick="addDigit('5')">5</button>
+          <button class="key" onclick="addDigit('6')">6</button>
+          <button class="key" onclick="addDigit('7')">7</button>
+          <button class="key" onclick="addDigit('8')">8</button>
+          <button class="key" onclick="addDigit('9')">9</button>
+          <button class="key" onclick="removeDigit()">⌫</button>
+          <button class="key" onclick="addDigit('0')">0</button>
+          <button class="key" onclick="checkCode()">✓</button>
+        </div>
+
+        <div class="hint">Hint: The day we became us</div>
+        <div class="error" id="errorMsg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <h1>Happy 2 Months, My Love 💕</h1>
+    <p>
+      A little surprise made just for you. These two months with you have been so
+      soft, special, and beautiful to me.
+    </p>
+    <button class="nav-btn" onclick="showPage('page3')">NEXT</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <h1>Pick a surprise Ayouchti 🎁</h1>
+
+    <div class="gift-row">
+      <div class="gift-wrap">
+        <img class="gift" src="images/gift.png" alt="Gift" onclick="showPage('page4')">
+        <div class="gift-label">Timeline</div>
+      </div>
+
+      <div class="gift-wrap">
+        <img class="gift" src="images/gift.png" alt="Gift" onclick="showPage('page5')">
+        <div class="gift-label">Reasons</div>
+      </div>
+
+      <div class="gift-wrap">
+        <img class="gift" src="images/gift.png" alt="Gift" onclick="showPage('page6')">
+        <div class="gift-label">Letter</div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="nav-btn" onclick="showPage('page2')">BACK</button>
+      <button class="nav-btn" onclick="showPage('page7')">NEXT</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="page4">
+    <div class="card">
+      <h1>Our Story So Far 🗓️</h1>
+      <p>Every date, a little moment that brought us closer.</p>
+
+      <div class="timeline">
+        <div class="milestone">
+          <div class="milestone-date">25 Feb 2026 · 22:10</div>
+          <div class="milestone-title">First Conversation 💬</div>
+          <div class="milestone-note">The moment it all began — a message that changed everything.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">04 Mar 2026</div>
+          <div class="milestone-title">You Said Yes 🌸</div>
+          <div class="milestone-note">The day I asked you on a date and my heart skipped a beat waiting for your answer.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">13 Mar 2026</div>
+          <div class="milestone-title">First Date ✨</div>
+          <div class="milestone-note">I was nervous and excited all at once — and you made it feel so easy.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">18 Mar 2026</div>
+          <div class="milestone-title">She Became Mine 💍</div>
+          <div class="milestone-note">The day I asked you to be my girlfriend — the best question I ever asked.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">19 Mar 2026</div>
+          <div class="milestone-title">Second Date ·   🎡</div>
+          <div class="milestone-note">Already together, already making memories. I didn't want that day to end.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">21 Mar 2026</div>
+          <div class="milestone-title">First Call · At the Airport ✈️📞</div>
+          <div class="milestone-note">I was heading back to France, and that call made one of the hardest moments so much easier to carry. Your voice was all I needed.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">24 Mar 2026</div>
+          <div class="milestone-title">First Video Call 🎥</div>
+          <div class="milestone-note">Seeing your face and your smile on screen — I felt so lucky.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">10 Apr 2026</div>
+          <div class="milestone-title">Love from Both Sides 💞</div>
+          <div class="milestone-note">The day we both said it — and the world felt warmer because of it.</div>
+        </div>
+        <div class="milestone">
+          <div class="milestone-date">14 Apr 2026</div>
+          <div class="milestone-title">Love on the Phone ❤️</div>
+          <div class="milestone-note">Three words through the phone — and my whole heart was full.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="nav-btn" onclick="showPage('page3')">BACK</button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page" id="page5">
+    <div class="card">
+      <h1>Reasons I love you 💗</h1>
+      <ul class="reasons">
+        <li>Your smile does something to my heart that I can't explain — it fills it with warmth every single time.</li>
+        <li>You are so beautiful, and I find myself amazed by you more and more each day.</li>
+        <li>The way you are caring and gentle with me makes me feel so safe and so loved — it means more than you know.</li>
+        <li>The distance between us never really feels real, because with you I always feel close. You make kilometers feel like nothing.</li>
+        <li>You have this gift of making me happy — not just sometimes, but always, effortlessly.</li>
+        <li>Whenever I'm a little down, you show up and remind me that everything is okay. You lift me up without even trying.</li>
+      </ul>
+    </div>
+
+    <div class="btn-group">
+      <button class="nav-btn" onclick="showPage('page3')">BACK</button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page" id="page6">
+    <div class="letter">
+      <h1>A letter for you 💌</h1>
+      <p>
+        I can’t believe it’s already been two months since I first got to know you —
+        it feels like I’ve known you for so much longer. This past month especially,
+        I’ve gotten closer to you, learned more about you, and for that I am truly happy.
+      </p>
+      <p>
+        I feel so blessed to have you in my life, and I look forward to everything
+        that is still to come with you.
+      </p>
+      <p>
+        Sometimes all I wish for is to be with you — to have you by my side, to hold
+        you in my arms and share quiet moments together. But the one thing that keeps
+        me going is knowing that one day, you and I will share a life together and
+        achieve everything we’ve set our hearts on.
+      </p>
+      <p>
+        Thank you for always being by my side, and thank you simply for being in my life.
+        Thank you for every laugh, every conversation, every little memory, and every
+        moment that has brought us closer. I truly treasure what we have.
+      </p>
+      <p>
+        I love you with all my heart. All I want in this life is to make you happy and
+        see your smile — it has a magic effect on me. Every time I see it, I feel a
+        warmth rush through me that no words can describe.
+      </p>
+      <p>
+        Habibi, thank you for these wonderful two months. I can’t wait for more memories,
+        more smiles, and more moments with you. ❤️
+      </p>
+    </div>
+
+    <div class="btn-group">
+      <button class="nav-btn" onclick="showPage('page3')">BACK</button>
+    </div>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section class="page" id="page7">
+    <div class="final-heart">💖</div>
+    <h1>Happy 2 Months, Baby</h1>
+    <p>
+      Thank you for the sweetest two months. I love you more than words can say,
+      and I’m so grateful for us.
+    </p>
+
+    <div class="btn-group">
+      <button class="nav-btn" onclick="showPage('page1')">REPLAY</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
